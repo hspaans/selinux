@@ -1,0 +1,15 @@
+module vscode 1.0;
+
+require {
+        type container_t;
+        type user_home_t;
+        class file { create open read write getattr setattr map append link rename unlink ioctl lock };
+        class dir { add_name create write open read getattr setattr remove_name rmdir rename reparent };
+        class lnk_file { read unlink create };
+}
+
+#============= container_t ==============
+
+allow container_t user_home_t:dir { add_name create write open read getattr setattr remove_name rmdir rename reparent };
+allow container_t user_home_t:file { create open read write getattr setattr map append link rename unlink ioctl lock };
+allow container_t user_home_t:lnk_file { read unlink create };
