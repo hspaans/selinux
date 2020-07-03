@@ -1,6 +1,12 @@
 # selinux-modules
 Modules for SELinux
 
+## Modules
+
+| Module | State | Note |
+|:-:|:-:|-|
+| vscode | Alpha | Using VSCode Devcontainers with Moby-Engine |
+
 ## Installing a module
 
 ```shell
