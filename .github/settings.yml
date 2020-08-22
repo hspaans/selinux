@@ -1,0 +1,6 @@
+---
+repository:
+  description: Modules for SELinux
+  topics: linux, selinux, module, vscode, docker
+  delete_branch_on_merge: true
+  has_wiki: false
